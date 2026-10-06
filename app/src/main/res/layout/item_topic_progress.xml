@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/icon_status"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:id="@+id/topic_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sample Topic"
+        android:textColor="#2E5339"
+        android:textSize="16sp"
+        android:paddingStart="12dp" />
+
+    <TextView
+        android:id="@+id/topic_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25%"
+        android:textColor="#FF9800"
+        android:textStyle="bold" />
+</LinearLayout>

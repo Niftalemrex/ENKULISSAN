@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Empty space for left or right alignment -->
+    <Space
+        android:id="@+id/space_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- Left extra icons container (Speech, See, Read) -->
+    <LinearLayout
+        android:id="@+id/left_extra_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/speech_icon_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_like_outline"
+            android:contentDescription="Speech"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/see_icon_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon"
+            android:contentDescription="See"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/read_icon_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_like_filled"
+            android:contentDescription="Read"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <!-- Center icon layout -->
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic"
+            android:textColor="#1B4332"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Right extra icons container (Speech, See, Read) -->
+    <LinearLayout
+        android:id="@+id/right_extra_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginStart="8dp">
+
+        <ImageView
+            android:id="@+id/speech_icon_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_novice_badge"
+            android:contentDescription="Speech"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/see_icon_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_like_outline"
+            android:contentDescription="See"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/read_icon_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_novice_badge"
+            android:contentDescription="Read"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

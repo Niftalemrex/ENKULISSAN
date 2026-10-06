@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- Gray solid fill -->
+    <solid android:color="#9E9E9E" /> <!-- Medium gray -->
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Optional stroke -->
+    <stroke
+        android:width="2dp"
+        android:color="#757575" /> <!-- Darker gray stroke -->
+</shape>

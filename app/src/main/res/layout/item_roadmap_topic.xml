@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingVertical="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- Circular Icon -->
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/topic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Topic"
+        android:textColor="#1B4332"
+        android:textSize="14sp"
+        android:textAlignment="center" />
+
+    <!-- Connector line -->
+    <View
+        android:id="@+id/line"
+        android:layout_width="2dp"
+        android:layout_height="32dp"
+        android:background="#BDBDBD"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

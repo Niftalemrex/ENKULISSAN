@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Level"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Beginner -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_beginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/btn_beginner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beginner"
+                android:backgroundTint="#2F855A"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Intermediate -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_intermediate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/card_beginner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/btn_intermediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intermediate"
+                android:backgroundTint="#2F855A"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Advanced -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/card_intermediate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/btn_advanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:backgroundTint="#2F855A"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="12dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Separator Line -->
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/card_advanced"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lay"
+            app:layout_constraintTop_toBottomOf="@id/divider_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Tools Title -->
+        <TextView
+            android:id="@+id/tv_tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Tools"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Alphabet -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_alphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_tools"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_alphabet"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="Alphabet Icon"
+                    android:src="@drawable/ha"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_alphabet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Alphabet"
+                    android:textColor="#212121"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_alphabet"
+                    app:layout_constraintTop_toTopOf="@id/icon_alphabet" />
+
+                <TextView
+                    android:id="@+id/subtitle_alphabet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Learn the Ethiopian Fidel"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon_alphabet"
+                    app:layout_constraintTop_toBottomOf="@id/title_alphabet" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Number -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/card_alphabet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="Number Icon"
+                    android:src="@drawable/a"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Number"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    app:layout_constraintStart_toEndOf="@id/icon_number"
+                    app:layout_constraintTop_toTopOf="@id/icon_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/subtitle_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Practice Counting in Fidel"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    app:layout_constraintStart_toEndOf="@id/icon_number"
+                    app:layout_constraintTop_toBottomOf="@id/title_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Day Month Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_day_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/card_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_day_month"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="Ethiopian Days and Months"
+                    android:src="@drawable/schedule"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_day_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Days and Months"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    app:layout_constraintStart_toEndOf="@id/icon_day_month"
+                    app:layout_constraintTop_toTopOf="@id/icon_day_month"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/subtitle_day_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Counting Ethiopian Days and Months "
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    app:layout_constraintStart_toEndOf="@id/icon_day_month"
+                    app:layout_constraintTop_toBottomOf="@id/title_day_month"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Translate Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/card_day_month"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_translate"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="Translate Icon"
+                    android:src="@drawable/translator"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_translate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Translate"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    app:layout_constraintStart_toEndOf="@id/icon_translate"
+                    app:layout_constraintTop_toTopOf="@id/icon_translate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/subtitle_translate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Translate Amharic and English"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    app:layout_constraintStart_toEndOf="@id/icon_translate"
+                    app:layout_constraintTop_toBottomOf="@id/title_translate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <!-- App Title -->
+
+    <!-- Login -->
+
+    <!-- Illustration -->
+
+    <!-- Subtitle 1 -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="ENKU LISSAN"
+        android:textColor="#2F855A"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/loginText"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="56dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="Login"
+        android:textColor="#1A202C"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/illustrationImage"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="Illustrationn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/illustrationn"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/getStartedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="169dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Learn a language \nfor Ethiopia"
+        android:textAlignment="viewStart"
+        android:textColor="#1A202C"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/illustrationImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <!-- Subtitle 2 -->
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="163dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Join ENKU LISSAN, a language learning \nplatform for speakers of over 80 Ethiopian languages."
+        android:textAlignment="viewStart"
+        android:textColor="#4A5568"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/illustrationImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle1" />
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#38A169"
+        android:text="Get started"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+
+    <!-- Or Divider -->
+    <TextView
+        android:id="@+id/orDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="16sp"
+        android:textColor="#4A5568"
+        app:layout_constraintTop_toBottomOf="@id/getStartedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="279dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4C51BF"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orDivider" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+        app:layout_constraintVertical_bias="0.578"
+        app:srcCompat="@drawable/illustration" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

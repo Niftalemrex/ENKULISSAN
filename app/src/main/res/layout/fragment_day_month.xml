@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- Weekdays Title -->
+    <TextView
+        android:id="@+id/tv_weekdays_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEE"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Weekly days"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Weekdays Grid -->
+
+    <!-- Separator Text -->
+
+    <GridView
+        android:id="@+id/grid_weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="8dp"
+        android:numColumns="4"
+        android:verticalSpacing="8dp" />
+
+    <TextView
+        android:id="@+id/tv_separator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Months of the Year"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEE"/>
+
+    <!-- Months Grid -->
+    <GridView
+        android:id="@+id/grid_months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

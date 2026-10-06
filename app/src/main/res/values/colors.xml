@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Background and Text -->
+    <color name="white">#FFFFFF</color>
+    <color name="background_light">#F8FAF9</color> <!-- Soft white background -->
+    <color name="title_color">#1F2937</color> <!-- Dark gray for headings -->
+    <color name="subtitle_color">#4A5568</color> <!-- Gray for subtitles -->
+
+    <!-- Primary Theme Colors -->
+    <color name="primary">#3CB371</color> <!-- Fresh green -->
+    <color name="primary_dark">#2F855A</color> <!-- Darker green -->
+    <color name="accent_light_green">#D1FAE5</color> <!-- Light green for highlights -->
+
+    <!-- Buttons and UI Elements -->
+    <color name="language_button_bg">#EDF2F7</color> <!-- Light gray -->
+    <color name="language_button_border">#E2E8F0</color> <!-- Border gray -->
+    <color name="flashcard_bg">#E5E7EB</color> <!-- Soft gray for flashcards -->
+    <color name="progress_alert_bg">#D1FAE5</color> <!-- Light green for progress or alerts -->
+
+    <color name="off_white">#FAF9F6</color>
+    <color name="primary_green">#2F855A</color>
+    <color name="text_dark">#1A202C</color>
+    <color name="text_hint">#4A5568</color>
+
+
+        <!-- Base Colors -->
+
+        <color name="black">#000000</color>
+        <color name="offWhite">#F9F9F9</color>
+        <color name="lightGray">#E0E0E0</color>
+        <color name="grayText">#666666</color>
+        <color name="darkText">#222222</color>
+
+        <!-- Theme Colors -->
+        <color name="primaryGreen">#4CAF50</color>
+        <color name="primaryGreenDark">#388E3C</color>
+        <color name="accentGreen">#81C784</color>
+
+        <!-- Icon Colors -->
+        <color name="iconGray">#999999</color>
+        <color name="iconGreen">#388E3C</color>
+
+        <!-- Achievement Icons -->
+        <color name="streakOrange">#FF5722</color>
+        <color name="xpBlue">#2196F3</color>
+        <color name="calendarGreen">#43A047</color>
+
+        <!-- Button Text -->
+        <color name="buttonTextWhite">#FFFFFF</color>
+
+
+</resources>

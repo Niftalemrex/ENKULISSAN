@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ENKULISSAN</string>
+        <string name="subtitle">Learn a language for Ethiopia\n\nJoin ENKULISSAN, a language learning platform for speakers of over 80 Ethiopian languages.</string>
+        <string name="get_started">Get started</string>
+        <string name="or">or</string>
+        <string name="sign_in">Sign in</string>
+        <string name="top_languages">Top languages</string>
+        <string name="amharic">Amharic</string>
+        <string name="tigrinya">Tigrinya</string>
+        <string name="oromo">Oromo</string>
+        <string name="somali">Somali</string>
+
+</resources>

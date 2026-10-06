@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094231558432",
+    "project_id": "enkulissan",
+    "storage_bucket": "enkulissan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094231558432:android:bbe881cd526d16b43daf45",
+        "android_client_info": {
+          "package_name": "com.example.enkulissan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfaluH5zSNibzFcd-ZXB7bBRHotJZyCKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

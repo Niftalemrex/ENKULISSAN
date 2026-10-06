@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_translate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter English text"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate to Amharic"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_translated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translation will appear here"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:paddingTop="24dp" />
+</LinearLayout>
